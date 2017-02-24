@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>dz1.1</title>
+</head>
+<body>
+	<script>
+		var pidrList = [];
+
+		while (pidrList.length < 5) {
+			var addPidr = prompt('На вахту заступает: ', 'Имя пидра');
+			pidrList.push(addPidr);
+			console.log('На вахту заступили: ' + pidrList);
+		}
+		var login = prompt('Посылка для пидра: ', 'Имя пидра');
+		for (var i = 0; i < pidrList.length; i++) {
+			if (pidrList[i] == login) {
+				console.log('добро пожаловать');
+			// } else {
+			// 	console.log('пока')
+			// }
+		}
+	}
+
+
+		// var a;
+		// console.log(a);
+		// var login = prompt('Посылка для пидра: ', 'Имя пидра');
+		// if (a == pidrList.indexOf(login)) {
+		// 	console.log('asd')
+		// } else {
+		// 	console.log('fgdfgfg')
+		// }
+
+	</script>
+</body>
+</html>

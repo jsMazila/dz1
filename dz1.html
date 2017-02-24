@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>dz1</title>
+</head>
+<body>
+	<script>
+		function exponentiation() {
+			var myNumber = prompt('Возвожу в степень, введи цифру', '');
+			var myExpo = prompt('Степень', '');
+			var result = 1;
+
+			if (myExpo == 0) {
+				// console.log('Результат ' + result);
+			} else {
+				console.log(myNumber + ' в ' + myExpo + 'й степени');
+				for (var i = 0; i < myExpo; i++) {
+					result = result * myNumber;
+				}
+			}
+			console.log('Результат ' + result);
+		}
+		exponentiation()
+	</script>
+</body>
+</html>
